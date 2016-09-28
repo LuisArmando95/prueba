@@ -15,6 +15,10 @@ class TestFiguras(unittest.TestCase):
 		resultado = self.figura.cuadrado(6)
 		self.assertEquals(36,resultado)
 
+	def test_area_cuadrado_lado_7(self):
+		resultado = self.figura.cuadrado(7)
+		self.assertEquals(49,resultado)
+
 	def test_area_cuadrado_lado_g(self):
 		resultado = self.figura.cuadrado('g')
 		self.assertEquals('dato incorrecto',resultado)
